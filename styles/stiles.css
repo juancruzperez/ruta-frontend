@@ -1,6 +1,7 @@
-body{
-    background-color: #ffffff;
+.titulo-principal{
+    padding-left: 30px;
 }
+
 #banner {
     width: 100%;
 }
@@ -8,7 +9,7 @@ body{
     background-color: #cccccc;
     padding: 20px;
 }
-#titulo {
+.titulo-centralizado {
     text-align: center;
 }
 p {
@@ -23,9 +24,6 @@ em strong{
 .diferenciales {
     background-color: #ffffff;
     padding: 30px;
-}
-h2{
-    text-align: center;
 }
 .items{
     font-style: italic;
