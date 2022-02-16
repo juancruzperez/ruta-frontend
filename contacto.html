@@ -24,40 +24,38 @@
     <main>
         <form>
             <label for="nombreApellido">Nombre y Apellido</label>
-            <input type="text" name="nombreApellido" id="nombreApellido" class="input-padron">
+            <input type="text" name="nombreApellido" id="nombreApellido" class="input-padron" required>
             
             <label for="correoElectronico">Correo Electronico</label>
-            <input type="email" name="correoElectronico" id="correoElectronico" class="input-padron">
+            <input type="email" name="correoElectronico" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
             
             <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" id="telefono" class="input-padron">
+            <input type="tel" name="telefono" id="telefono" class="input-padron" required placeholder="(XX)XXXX-XXXX">
             
             <label for="info-opcional">Mensaje</label>
             
-            <textarea name="info-opcional" id="info-opcional" cols="70" rows="10" class="input-padron"></textarea>
-          
-            <div id="selector-contacto">
-                
-                <P>Como le gustaria que lo contactemos</P>
+            <textarea name="info-opcional" id="info-opcional" cols="70" rows="10" class="input-padron" required></textarea>
+            
+            <fieldset>
+                <legend>Como le gustaria que lo contactemos</legend>
 
                 <label for="radio-email"><input type="radio" value="email" id="radio-email" name="contacto">Email</label>
                 
                 <label for="radio-telefono"><input type="radio" value="telefono" id="radio-telefono" name="contacto">Telefono</label>
                 
-                <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto">Whatsapp</label>
-                
-            </div>
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto" checked>Whatsapp</label>
+            </fieldset>
 
-            <div id="selectorHorario">
-                <p>En cual horario prefiere ser atendido</p>
+            <fieldset>
+                <legend>En cual horario prefiere ser atendido</legend>
                 <select>
                     <option>Manhana</option>
                     <option>Tarde</option>
                     <option>Noche</option>
                 </select>
-            </div>
+            </fieldset>
 
-            <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de la Barberia Alura</label>
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura</label>
             
             <input type="submit" value="Enviar formulario" id="btn-enviar">
         </form>
